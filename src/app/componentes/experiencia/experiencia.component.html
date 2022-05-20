@@ -1,0 +1,49 @@
+<section>
+    
+    <div class="card mb-3">
+      <div class="card-body">
+        <h5 class="card-title">Experiencia
+        <button type="button" class="btn btn-light float-end"><i class="fa-solid fa-plus"></i></button></h5>
+        <div class="card-body">
+          <h6 class="card-title fw-normal">Agregar Experiencia</h6>
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Empresa</label>
+              <input type="text" class="form-control" >
+              
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Cargo</label>
+              <input type="text" class="form-control" >
+              
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Desde</label>
+              <input type="date" class="form-control" >
+              
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Hasta</label>
+              <input type="date" class="form-control" >
+              
+            </div>
+            <div class="mb-3">
+              <label for="formFile" class="form-label">Logo Empresa</label>
+              <input class="form-control" type="file" id="formFile">
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Submit</button>
+            
+          </form>
+        <div class="card border-0">
+            <app-item-experiencia *ngFor="let elemento of listaExperiencia, let i=index"
+            [expItem]="elemento"
+            [index]="i"
+            (onEditItem)="onEdit($event)"></app-item-experiencia>
+
+          
+      </div>
+    </div>
+  </div>
+  </div>
+</section>

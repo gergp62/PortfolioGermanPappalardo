@@ -1,0 +1,57 @@
+/* You can add global styles to this file, and also import other style files */
+.btn-light{
+    margin: 3px;
+}
+
+.button{
+    float: right;
+    margin-right: 0px;
+    margin-left: 10px;
+}
+
+header, section{
+    margin: 5px 0px;
+}
+
+.card-img-top{
+    border-radius: 20px;
+}
+
+
+.progress {
+    height: 35px;
+    margin: 20px;
+       
+}
+
+
+
+.progress h3 {
+    text-align: left;
+}
+
+.progress h4 {
+    text-align: left;
+}
+
+.navbar-brand {
+    
+    font-family: 'Press Start 2P', cursive;
+    font-weight: bolder;
+}
+.fotoPerfil{
+    position: absolute;
+    width: 15%;
+    height: auto;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin-top: -15%;
+    margin-left: 2%;
+    
+    max-width: 100%;
+    z-index: 1;
+    
+}
+
+
+
